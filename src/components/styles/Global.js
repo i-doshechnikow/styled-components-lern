@@ -9,10 +9,12 @@ const GlobalStyles = createGlobalStyle`
 
 body {
     background: ${(props) => {return props.theme.colors.body}};
-    color: hsl(192, 100%, 9%);
+    // color: hsl(192, 100%, 9%);
+    color: ${(props)=> {return props.theme.colors.textColor}};
     font-family: 'Poppins', sans-serif;
     font-size: 1.15em;
     margin: 0;
+    transition: 0.3s;
 }
 
 p {
