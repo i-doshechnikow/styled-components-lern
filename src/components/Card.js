@@ -6,7 +6,7 @@ const Card = (props) => {
   } = props;
 
   return (
-    <StyledCard>
+    <StyledCard layout={id % 2 === 0 && "row-reverse"}>
       <div>
         <h2>{title}</h2>
         <p>{body}</p>
